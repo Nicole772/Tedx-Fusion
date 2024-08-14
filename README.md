@@ -1,4 +1,4 @@
-## Progetto TEDx Fusion
+## TEDx Fusion
 
 Questo progetto è stato sviluppato nell'ambito del corso di **Tecnologie Cloud e Mobile** del corso di laurea triennale in **Ingegneria Informatica** presso l'Università degli Studi di Bergamo.
 
