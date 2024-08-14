@@ -1,34 +1,37 @@
-# TEDx Fusion
+## Progetto TEDx Fusion
 
-**TEDx Fusion** nasce dalla volontà di trasformare i contenuti ispiratori dei TEDx Talks in uno strumento innovativo per la formazione online. Immagina un sistema che ti guida attraverso l'immenso mondo delle conferenze TEDx, consigliandoti i migliori corsi su piattaforme come Coursera, Udemy ed edX, aiutandoti a trasformare l'ispirazione in azione concreta e conoscenza pratica.
+Questo progetto è stato sviluppato nell'ambito del corso di **Tecnologie Cloud e Mobile** del corso di laurea triennale in **Ingegneria Informatica** presso l'Università degli Studi di Bergamo.
 
-## La Visione di TEDx Fusion
+**TEDx Fusion** nasce dall'idea di trasformare l'immensa quantità di contenuti ispiratori presenti nei TEDx Talks in un potente strumento di supporto alla formazione per gli e-Learners. L'obiettivo è rivoluzionare il modo in cui gli utenti accedono, fruiscono e interagiscono con i TEDx Talks, utilizzando tecnologie avanzate di **cloud** e **mobile** per offrire un'esperienza d'apprendimento senza pari.
 
-TEDx Fusion vuole cambiare radicalmente il modo in cui le persone si avvicinano all'apprendimento digitale, integrando il potere dei TEDx Talks con percorsi formativi personalizzati. Il nostro obiettivo è quello di:
+### Obiettivo del Progetto
 
-1. Analizzare le conferenze TEDx visualizzate dagli utenti, scoprendo i temi e le idee più rilevanti per ognuno.
-2. Suggerire corsi online altamente pertinenti che completino e amplifichino le conoscenze apprese dai TEDx Talks.
-3. Creare un'esperienza d'apprendimento su misura, offrendo highlights e approfondimenti sui temi più significativi.
+L'obiettivo di TEDx Fusion è di:
 
-## Cosa Offriamo
+1. **Analizzare i dati:** Utilizzare tecnologie cloud per raccogliere e analizzare i dati delle conferenze TEDx viste dagli utenti.
+2. **Consigliare corsi online:** Sfruttare algoritmi intelligenti per suggerire corsi su piattaforme come Coursera, Udemy ed edX, basandosi sui contenuti visualizzati.
+3. **Evidenziare temi:** Utilizzare servizi cloud per estrarre e evidenziare i temi principali trattati, creando un sistema di raccomandazione efficace.
+4. **Proporre percorsi formativi:** Offrire percorsi formativi mirati e highlight tematici per facilitare una scelta più rapida e consapevole.
 
-TEDx Fusion non è solo un aggregatore di contenuti, ma una piattaforma intelligente pensata per massimizzare il tuo tempo e la tua crescita personale. I nostri servizi includono:
+### Servizi Offerti
 
-- **Analisi dei corsi più rilevanti:** Basandoci sui tuoi interessi e sulle tue interazioni con i TEDx Talks, ti consigliamo i migliori corsi online per continuare il tuo percorso formativo.
-- **Raccomandazioni personalizzate:** Grazie a un sistema di suggerimento avanzato, ti guidiamo attraverso un percorso di apprendimento che si adatta alle tue esigenze e aspirazioni.
-- **Analisi sentimentale e highlights:** Riconosciamo i momenti più impattanti e significativi dei TEDx Talks, offrendoti scorciatoie verso i contenuti che fanno davvero la differenza.
+TEDx Fusion fornisce una serie di servizi avanzati:
 
-## Per Chi è Pensato TEDx Fusion?
+- **Analisi dei corsi online più pertinenti:** Utilizzo di tecnologie cloud per analizzare e raccomandare corsi online che si allineano con gli interessi degli utenti.
+- **Raccomandazione di contenuti su misura:** Sviluppo di applicazioni mobile e servizi cloud per offrire suggerimenti personalizzati e pertinenti.
+- **Analisi sentimentale e creazione di Highlights:** Implementazione di algoritmi di analisi sentimentale per creare highlight tematici dai TEDx Talks, migliorando l'esperienza dell'utente.
 
-TEDx Fusion è la piattaforma perfetta per chiunque voglia trasformare l'ispirazione in crescita tangibile:
+### A Chi Si Rivolge TEDx Fusion?
 
-- **Professionisti e Leader:** Per coloro che desiderano restare al passo con idee innovative e spunti di riflessione per migliorare le proprie competenze e leadership.
-- **Studenti e Ricercatori:** Per chi è in cerca di nuove conoscenze, con la sicurezza di ricevere raccomandazioni su misura per i loro interessi accademici.
-- **Appassionati di TEDx Talks:** Per gli amanti delle conferenze TEDx che vogliono approfondire i temi che li appassionano, con un'esperienza di apprendimento a tutto tondo.
+TEDx Fusion è progettato per:
 
-## Il Nostro Team
+- **Professionisti e Leader:** Che desiderano restare aggiornati con idee innovative e ispiratrici, supportati da raccomandazioni personalizzate.
+- **Studenti e Ricercatori:** Che cercano di approfondire le loro conoscenze su argomenti specifici, con un supporto che integra contenuti e corsi online.
+- **Appassionati di TEDx Talks:** Chiunque ami i TEDx Talks e desideri un'esperienza di apprendimento arricchita grazie a un'analisi approfondita e personalizzata.
 
-TEDx Fusion è frutto del lavoro appassionato di un gruppo di creativi e innovatori:
+### Partecipanti del Gruppo
+
+Il progetto TEDx Fusion è stato realizzato da:
 
 - **De Vivo Massimo** - Matricola: 1081227
 - **Simoni Nicole** - Matricola: 1080570
