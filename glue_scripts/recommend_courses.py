@@ -2,7 +2,7 @@ import requests
 import sys
 import json
 import pyspark
-from pyspark.sql.functions import col, collect_list
+from pyspark.sql.functions import col, collect_list, count
 from awsglue.transforms import *
 from awsglue.utils import getResolvedOptions
 from pyspark.context import SparkContext
@@ -15,6 +15,7 @@ from pymongo import MongoClient
 args = getResolvedOptions(sys.argv, ['JOB_NAME'])
 
 tags_dataset_path = "s3://tedx-2025-data/tags.csv"
+user_activity_path = "s3://tedx-2025-data/user_activity.csv"  # Example user activity dataset
 
 # Spark Context
 sc = SparkContext()
@@ -25,15 +26,31 @@ job.init(args['JOB_NAME'], args)
 
 # Load datasets
 tags_dataset = spark.read.option("header", "true").csv(tags_dataset_path)
+user_activity = spark.read.option("header", "true").csv(user_activity_path)
 
 # Aggregate tags per video
 tags_dataset_agg = tags_dataset.groupBy(col("id").alias("id_ref")).agg(collect_list("tag").alias("tags"))
+
+# Aggregate user preferences
+user_preferences = user_activity.groupBy("user_id").agg(
+    collect_list("video_id").alias("watched_videos"),
+    collect_list("tag").alias("watched_tags"),
+    count("tag").alias("tag_count")
+)
 
 # MongoDB Connection
 mongo_client = MongoClient("mongodb://localhost:27017/")  # Update with actual connection string
 db = mongo_client["unibg_tedx_2024"]
 user_preferences_collection = db["user_preferences"]
 recommended_courses_collection = db["recommended_courses"]
+
+# Update user preferences in MongoDB
+for row in user_preferences.collect():
+    user_preferences_collection.update_one(
+        {"user_id": row["user_id"]},
+        {"$set": {"watched_videos": row["watched_videos"], "watched_tags": row["watched_tags"]}},
+        upsert=True
+    )
 
 def fetch_courses_from_api(tag):
     """
