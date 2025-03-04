@@ -26,8 +26,9 @@ job.init(args['JOB_NAME'], args)
 # Load transcripts dataset
 transcripts_dataset = spark.read.option("header", "true").csv(transcripts_dataset_path)
 
-# MongoDB Connection
-mongo_client = MongoClient("mongodb://localhost:27017/")  # Update with actual connection string
+# MongoDB Atlas Connection
+mongo_uri = "mongodb+srv://admin:admin@cluster0.mongodb.net/unibg_tedx_2024?retryWrites=true&w=majority"
+mongo_client = MongoClient(mongo_uri)
 db = mongo_client["unibg_tedx_2024"]
 highlights_collection = db["video_highlights"]
 
